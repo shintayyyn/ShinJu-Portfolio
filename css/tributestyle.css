@@ -4,6 +4,32 @@
     font-family: cursive;
     scroll-behavior: smooth;
 }
+#sidenavigation a {
+	position: fixed; 
+	left: -93px; 
+	transition: 0.3s; 
+	padding: 20px; 
+	width: 100px; 
+	text-decoration: none; 
+	font-size: 30px; 
+	color: #fff; 
+	border-radius: 2px 10px 25px 0; 
+}
+#sidenavigation a:hover{
+	left: 0; 
+	background-color: #f7c324;
+    color:#161922;
+}
+#index{
+	top: 120px;
+	background: transparent;
+    border:3px solid gold; 
+}
+#back{
+	top: 185px;
+	background: transparent;
+ 	border:3px solid gold; 
+}
 nav{
     background: rgba(0, 0, 0, 0.678);
     background-size: cover;
@@ -12,7 +38,6 @@ nav{
     position: fixed;
     z-index: 1;
 }
-
 nav ul li{
     display: inline-block;
     line-height: 80px;
@@ -23,7 +48,6 @@ nav ul{
     float: right;
     margin-right: 55px;
 }
-
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -31,7 +55,6 @@ nav ul li a{
     font-family: cursive;
     padding: 7px 13px;
 }
-
 label.logo{
     color: white;
     font-size: 35px;
@@ -40,7 +63,6 @@ label.logo{
     font-weight: bold;
     font-family: cursive;
 }
-
 .checkButton{
     font-size: 30px;
     color: white;
@@ -50,60 +72,11 @@ label.logo{
     cursor: pointer;
     display: none;
 }
-
 .myCheckBox{
     display: none;
 }
-
 a:hover,a.active{
     color: #f7c324;
-}
-
-@media screen and (max-width:952px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:858px) {
-    .checkButton{
-        display: block;
-    }
-
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(239, 232, 233);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-        color: black;
-    }
-
-    a:hover,a.active{
-        color: #161922;
-    }
-
-    .myCheckBox:checked ~ ul{
-        left: 0;
-    }
 }
 #about{
     flex-direction: column;
@@ -206,6 +179,7 @@ button:hover {
     margin-right: 40px;
 }
 .main img{
+    margin: 15px;
     width: 300px;
    
 }
@@ -214,93 +188,106 @@ button:hover {
     display: flex;
     float: left;
     width: 25%;
-  }
-  .row::after {
+ }
+#biography .img:hover{
+    cursor: pointer;
+    background-color: #f7c324 ;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 5px 5px 5px 5px ;
+    transition: 2s;
+    transform: scale3d(2s);
+ }
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  .coltxt {
+}
+.coltxt {
     color:#fff;
     padding: 35px;
     text-align: justify;
     float: left;
     width: 50%;
-  }
-  .rowtxt:after {
+}
+.rowtxt:after {
     content: "";
     display: table;
     clear: both;
     
-  }
- #foundation .img{
-    margin: 10px;
+}
+#foundation .img{
+  margin: 25px;
   width: 310px;
   height: 290px;
   object-fit: cover;
-
- }
- h2{
+}
+#foundation .img:hover{
+    cursor: pointer;
+    background-color: gold;
+    border-radius: 25px;
+    transition: 2s;
+    transform: scale3d(2s);
+}
+h2{
     color: gold;
     text-align: left;
     margin-left: 40px;
- }
- li{
+}
+li{
     color: #fff;
     text-align: left;
     margin-left: 60px;
- }
- #quotes .img{
+}
+#quotes .img{
     margin-left: 90px;
     padding-top: 100px;
     align-items: center;
     justify-content: center;
     width: 38%;
     height: auto;
-    
- }
- #quotes q{ 
+}
+#quotes q{ 
     text-align: justify;
     margin-left: 5px;
     font-style: italic;
     font-family:  'Segoe UI';
     line-height: 2;
+    font-size: 17;
     color: #fff;
     margin-left: 0px;
     display: inline-block;
- }
- #quotes q:hover{ 
+}
+#quotes q:hover{ 
     color: gold;
- }
- #quotes h2{
+}
+#quotes h2{
     color: gold;
     text-align: left;
     margin-left: 5px;
     line-height: 1.5;
- }
- #quotes p{
+}
+#quotes p{
     margin-right: 40px;
     line-height: 1.5;
     margin-left: 5;
     text-align: justify;
- }
- .source a{
+}
+.source a{
     text-decoration: none;
     color: #f7c324;
     line-height: 2;
     margin-left: 40px ;
- }
- .source a:hover{
+}
+.source a:hover{
     color: aquamarine;
- }
- #contacts p{
+}
+#contacts p{
     font-style: italic;
     text-decoration: wavy;
-    align-items: center;
-    text-align: center;
     justify-content: center;
  }
-i{
+#contacts i{
     color: #f7c324;
     justify-content: left;
     float: left;
@@ -308,7 +295,7 @@ i{
     margin-top: 25px;
     font-size: 70px;
 }
-i:hover{
+#contacts i:hover{
     color: aquamarine;
     transform: scale(1.2);
     border-radius:25px ;
