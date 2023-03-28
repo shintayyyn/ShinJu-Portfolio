@@ -8,37 +8,36 @@
 }
 #sidenavigation a {
   position: fixed; 
-  left: -80px; 
+  left: -93px; 
   transition: 0.3s; 
-  padding: 15px; 
-  width: 100px; 
+  padding: 20px; 
+  width: 110px; 
   text-decoration: none; 
-  font-size: 20px; 
-  color: rgb(10, 2, 2); 
-  border-radius: 0 5px 5px 0; 
+  font-size: 30px; 
+  color:#fff; 
+  border-radius: 2px 10px 25px 0; 
 }
 
 #sidenavigation a:hover {
+  background-color: #f7c324;
+  color:#161922;
   left: 0; 
 }
 
 #main{
   top: 20px;
-  background-color: #f6f7f6;
+  background: transparent;
+  border:3px solid gold; 
 }
-
 #aboutus {
-  top: 80px;
-  background-color: gold; 
+  top: 90px;
+  background: transparent;
+  border:3px solid gold; 
 }
-
-#activities{
-  top: 140px;
-  background-color: #f5eeed; 
-}
-#contactus {
-  top: 200px;
-  background-color:gold; 
+#contactus{
+  top: 160px;
+  background: transparent;
+  border:3px solid gold; 
 }
 .navbar {
   margin-left: 500px;
@@ -49,7 +48,7 @@
 }
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 22px;
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
@@ -60,7 +59,7 @@
   overflow: hidden;
 }
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 22px;
   border: none;
   outline: none;
   color: rgb(247, 243, 243);
@@ -228,7 +227,7 @@ margin-bottom: 15px;
 .form{
   justify-content: center;
   text-align: center;
-  margin-left: 400px;
+  margin-left: 450px;
   border-radius: 50px;
   width: 40%;
   padding: 20px;
