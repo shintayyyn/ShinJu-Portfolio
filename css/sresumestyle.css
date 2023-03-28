@@ -5,22 +5,50 @@
 	padding: 0;
 	list-style: none;
 	box-sizing: border-box;
-	font-family: 'Ubuntu';
+	font-family: Georgia;
 }
-
 body{
-	background: #161922;
+	background:#161922;
 }
-
-.resume{
+#sidenavigation a {
+	position: fixed; 
+	left: -93px; 
+	transition: 0.3s; 
+	padding: 20px; 
+	width: 110px; 
+	text-decoration: none; 
+	font-size: 30px; 
+	color: #fff; 
+	border-radius: 2px 10px 25px 0; 
+}
+#sidenavigation a:hover{
+	left: 0; 
+	background-color: #f7c324;
+    color:#161922;
+}
+#home{
+	top: 20px;
+	background: transparent;
+    border:3px solid gold; 
+}
+#back {
+	top: 95px;
+	background: transparent;
+ 	border:3px solid gold; 
+}
+#next{
+	top: 170px;
+	background: transparent;
+    border:3px solid gold; 
+}
+.main{
 	border-radius:25px;
-	border: 2px solid #f7c324;
+	border: 4px solid #f7c324;
 	width: 800px;
-	background: #f7c324;
+	background:  #f7c324;
 	margin: 25px auto;
 	display: flex;
 }
-
 .left{
 	background:#161922;
 	width: 250px;
@@ -28,25 +56,20 @@ body{
 	border-bottom-left-radius: 25px;
 	border-top-left-radius: 25px;
 }
-
 .right{
 	width: calc(100% - 250px);
 }
-
-.left .img_holder{
+.left .imgbox{
 	text-align: center;
 	padding: 20px 0;
 }
-
-.left .img_holder img{
+.left .imgbox img{
 	width: 200px;
 	border-radius: 30px;
 }
-
 .pb{
 	padding-bottom: 20px;
 }
-
 .title{
 	font-size: 24px;
 	font-weight: 700;
@@ -58,69 +81,70 @@ body{
 	text-align: right;
 	margin-bottom: 15px;
 }
-
 .title:before{
 	content: "";
 	position: absolute;
-	top: 35px;
+	top: 40px;
 	right: 0;
 	width: 100px;
 	height: 3px;
 	background: #f7c324;
 }
-
+.title:hover{
+	color: gold;
+	cursor: pointer;
+}
 .left .icon{
 	font-size: 20px;
-	color: #161922;
+	color: #f7c324;
 }
-
 .left .text{
 	color: #f7c324;
 	text-transform: uppercase;
 	font-size: 13px;
 }
-
-.contact .li_wrap{
+.contact .licover{
 	display: flex;
 	align-items: center;
 	width: 100%;
 	margin-bottom: 15px;
 	
 }
-
-.contact .li_wrap .icon{
+.contact .licover .icon{
 	width: 50px;
 	height: 50px;
-	background: gold;
+	background: #161922;
 	border-radius: 15px;
+	border:2px solid #f7c324;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-right: 15px;
 }
+.contact .licover .icon:hover{
+	background-color: #f7c324;
+ 	color:#161922;
+}
 .contact a{
 	text-decoration: none;
 }
-.contact .li_wrap .text{
+.contact .licover .text{
 	width: calc(100% - 50px);
 	word-break: break-word;
 	color: #f7c324;
 }
-.li_wrap:hover .icon, 
-.li_wrap:hover .text {
-	transition: 3s;
-	color:#fff;
+.contact .licover .text:hover{
+	cursor: pointer;
+	color: #fff;
 }
-
 .skills ul,
 .hobbies ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
-.skills .li_wrap,
-.hobbies .li_wrap{
+.skills .licover,
+.hobbies .licover{
 	width: 100px;
 	height: 100px;
 	margin-bottom: 15px;
@@ -130,49 +154,41 @@ body{
 	align-items: center;
 	justify-content: center;
 }
-
-.skills .li_wrap{
+.skills .licover{
 	border: 2px solid #f7c324;
 }
-
-.skills .li_wrap .text,
-.hobbies .li_wrap .text{
+.skills .licover .text,
+.hobbies .licover .text{
 	margin-top: 5px;
 	text-align: center;
 }
-.skills .li_wrap:hover{
-	transition: 2s;
+.skills .licover:hover{
 	background: #f7c324;
 }
-.skills .li_wrap .icon,
-.skills .li_wrap .text{
+.skills .licover .icon,
+.skills .licover .text{
 	color: #f7c324;
 }
-.skills .li_wrap:hover .icon,
-.skills .li_wrap:hover .text{
+.skills .licover:hover .icon,
+.skills .licover:hover .text{
 	color: #161922;
     text-align: center;
 }
-.hobbies .li_wrap{
+.hobbies .licover{
 	border: 2px solid #f7c324;
 }
-
-.hobbies .li_wrap .icon,
-.hobbies .li_wrap .text{
+.hobbies .licover .icon,
+.hobbies .licover .text{
 	color: #f7c324;
 }
-
-.hobbies .li_wrap:hover{
-	transition: 2s;
+.hobbies .licover:hover{
 	background: #f7c324;
 }
-
-.hobbies .li_wrap:hover .icon,
-.hobbies .li_wrap:hover .text{
+.hobbies .licover:hover .icon,
+.hobbies .licover:hover .text{
 	color: #161922;
     text-align: center;
 }
-
 .header{
 	background: #161922;
 	padding: 15px 30px;
@@ -181,84 +197,76 @@ body{
 	border-top-right-radius: 25px;
 	font-family: 'Times New Roman';
 }
-
 .header .name{
-	font-size: 35px;
+	font-size: 30px;
 	direction: ltr;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #f7c324;
 }
-
 .header .role{
 	font-style: italic;
 	font-weight: 300;
 	font-size: 22px;
-	color: #f7c324;
+	color: #fff;
 	margin-left: 0in;
 
 }
-
 .header .about {
 	margin-top: 20px;
 	line-height: 25px;
 }
-.right_inner .title{
+.rightinsideinfo .title{
 color: #161922;
 }
-.right_inner .title::before{
+.rightinsideinfo .title:hover{
+	color:#fff;
+}
+.rightinsideinfo .title::before{
 	content: "";
 	position: absolute;
 	top: 35px;
 	right: 0;
-	width: 100px;
+	width: 150px;
 	height: 3px;
-	background: #161922;
+	background: #fff;
 }
-
-.right_inner{
+.rightinsideinfo{
 	padding: 30px;
 	color: #161922;
 }
-
-.right_inner .education{
+.rightinsideinfo .education{
 	margin-top: 30px;
 }
-
-.right_inner .li_wrap{
+.rightinsideinfo .licover{
 	display: flex;
 	margin-bottom: 15px;
 }
-
-.right_inner .li_wrap .date {
+.rightinsideinfo .licover .date {
     width: 125px;
     color: #161922;
+	font-weight: 750;
 }
-
-.right_inner .li_wrap .info{
+.rightinsideinfo .licover .info{
 	width: calc(100%  - 125px);
 	padding-left: 25px;
 	position: relative;
 }
-
-.right_inner .li_wrap .info_title{
+.rightinsideinfo .licover .infotitle{
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
 	color: #161922;
 }
-
-.right_inner .li_wrap .info_com{
+.rightinsideinfo .licover .infosub{
 	font-weight: 300;
 	font-size: 14px;
 	margin-top: 3px;
 }
-
-.right_inner .li_wrap .info_cont{
+.rightinsideinfo .licover .infocont{
 	margin-top: 15px;
 }
-
-.right_inner .li_wrap .info:before{
+.rightinsideinfo .licover .info:before{
 	content: "";
 	position: absolute;
 	top: 3px;
@@ -269,8 +277,7 @@ color: #161922;
 	border-radius: 0%;
 	border:1px solid #fff;
 }
-
-.right_inner .li_wrap .info:after{
+.rightinsideinfo .licover .info:after{
 	content: " ";
 	position: absolute;
 	top: 14px;
@@ -286,7 +293,7 @@ cite , cite a{
     color: #f7c324;
 	line-height: 4;
 	padding-top: 0px;
-    margin-left: 260px;
+    margin-left: 180px;
  }
 cite a:hover{
     color: aquamarine;
