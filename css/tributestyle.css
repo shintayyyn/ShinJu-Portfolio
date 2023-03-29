@@ -217,8 +217,7 @@ button:hover {
     
 }
 #foundation .img{
-  margin: 25px;
-  justify-content: center;
+  margin: 10px;
   width: 310px;
   height: 290px;
   object-fit: cover;
