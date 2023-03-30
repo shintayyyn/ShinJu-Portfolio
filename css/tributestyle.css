@@ -181,6 +181,7 @@ button:hover {
 .main img{
     margin: 15px;
     width: 300px;
+    object-fit: cover;
    
 }
 .img {
