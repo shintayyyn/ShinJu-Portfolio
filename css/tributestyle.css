@@ -186,9 +186,9 @@ button:hover {
     width: 25%;
  }
 #biography .main img{
-    margin: 15px;
-    width: 400px;
-    height: 510px;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
 }
 #biography .img:hover{
