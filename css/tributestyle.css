@@ -220,8 +220,8 @@ button:hover {
 }
 #foundation .img{
   margin: 5px;
-  width: 410px;
-  height: 390px;
+  width: 350px;
+  height: 290px;
   object-fit: cover;
 }
 #foundation .img:hover{
