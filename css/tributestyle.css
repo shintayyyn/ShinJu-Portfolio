@@ -180,8 +180,8 @@ button:hover {
 }
 .main img {
     margin: 15px;
-    width: 1080px;
-    height:1350px;
+    width: 1350px;
+    height:1080px;
     object-fit: cover;
    
 }
