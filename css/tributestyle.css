@@ -178,9 +178,10 @@ button:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-.main img{
+.main img {
     margin: 15px;
     width: 300px;
+    height:110px;
     object-fit: cover;
    
 }
