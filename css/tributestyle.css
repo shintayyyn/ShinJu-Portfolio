@@ -178,19 +178,18 @@ button:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-#biography .main img{
-    margin: 15px;
-    width: 300px;
-    height: auto; 
-    background-size: cover;
-   
-}
 .img{
     padding:20px;
     display: flex;
     float: left;
     width: 25%;
  }
+#biography .main img{
+    margin: 15px;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+}
 #biography .img:hover{
     cursor: pointer;
     background-color: #f7c324 ;
@@ -218,10 +217,10 @@ button:hover {
     clear: both;
     
 }
-#foundation .img{
-  margin: 5px;
-  width: 100px;
-  height: 200px;
+#foundation .main img{
+  margin-left: 10px;
+  width: 300px;
+  height: 300;
   object-fit: cover;
 }
 #foundation .img:hover{
