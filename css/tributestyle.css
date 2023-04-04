@@ -178,10 +178,10 @@ button:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-.main img {
+.main img{
     margin: 15px;
-    width: 1350px;
-    height:1080px;
+    width: 300px;
+    max-width: 100%; 
     object-fit: cover;
    
 }
