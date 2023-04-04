@@ -188,7 +188,7 @@ button:hover {
     margin: 15px;
     width: 300px;
     height: auto;
-    background-size: cover;
+    object-fit: cover;
 }
 #biography .img:hover{
     cursor: pointer;
