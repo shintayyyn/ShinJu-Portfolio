@@ -249,7 +249,7 @@ li{
 }
 #quotes q{ 
     text-align: justify;
-    margin-left: 5px;
+    margin-left: 20px;
     font-style: italic;
     font-family:  'Segoe UI';
     line-height: 2;
@@ -264,11 +264,11 @@ li{
 #quotes h2{
     color: gold;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 20px;
     line-height: 1.5;
 }
 #quotes p{
-    margin-right: 40px;
+    margin-right: 30px;
     line-height: 1.5;
     margin-left: 5;
     text-align: justify;
