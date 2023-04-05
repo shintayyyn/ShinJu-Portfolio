@@ -6,7 +6,7 @@
 }
 #sidenavigation a {
 	position: fixed; 
-	left: -93px; 
+	left: -83px; 
 	transition: 0.3s; 
 	padding: 20px; 
 	width: 100px; 
@@ -26,7 +26,7 @@
     border:3px solid gold; 
 }
 #back{
-	top: 185px;
+	top: 190px;
 	background: transparent;
  	border:3px solid gold; 
 }
@@ -145,9 +145,9 @@ a:hover,a.active{
 button{
     background-color: gold;
     border-color: #161922;
-    border-radius:25px;
-    padding: 10px 20px;
-    font-size: large;
+    border-radius:30px;
+    padding: 20px 30px;
+    font-size: 20px;
     font-weight: bold; 
 }
 button:hover {
@@ -179,17 +179,18 @@ button:hover {
     margin-left: 40px;
     margin-right: 40px;
 }
-.img{
+.img {
     padding:20px;
     display: flex;
     float: left;
     width: 25%;
  }
 #biography .main img{
-    margin: 10px;
+    margin: 5px;
     width: 300px;
     height: 400px;
     object-fit: cover;
+   
 }
 #biography .img:hover{
     cursor: pointer;
@@ -241,21 +242,21 @@ li{
     text-align: left;
     margin-left: 60px;
 }
-#quotes .content img{
-    margin-top: 30px;
-    height: auto;   
-    width: 350px;
-    max-width: 100%;
+#quotes .main img{
+    width: 600px;
+    height: 600px;
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+ 
 #quotes q{ 
-    text-align: justify;
-    margin-left: 20px;
+    margin-left: 150px;
     font-style: italic;
     font-family:  'Segoe UI';
     line-height: 2;
-    font-size: 17;
+    font-size: 16;
     color: #fff;
-    margin-left: 0px;
     display: inline-block;
 }
 #quotes q:hover{ 
@@ -264,14 +265,16 @@ li{
 #quotes h2{
     color: gold;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 150px;
     line-height: 1.5;
 }
 #quotes p{
-    margin-right: 30px;
+    margin-left: 150px;
     line-height: 1.5;
-    margin-left: 5;
     text-align: justify;
+}
+#quotes .source a{
+    float: left;
 }
 .source a{
     text-decoration: none;
